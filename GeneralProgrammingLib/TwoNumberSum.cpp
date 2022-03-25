@@ -83,7 +83,28 @@ vector<int> GetTwoNumbersThatSumToTarget2(int values[], int n, int targetNum)
 }
 
 
+/*
+	Brute force solution
+
+	In the brute force (naive) solution, we will walk the array for each element in the array
+	until the target number is found
+
+	Time complexity O(n2) since we are looping in a loop
+	Space complexity O(1) since we keep a constant amount of data in memory
+
+*/
 vector<int> GetTwoNumbersThatSumToTarget3(int values[], int n, int targetNum)
 {
+	for (auto i = 0; i < n; i++)
+	{
+		for (auto j = 0; j < n; j++)
+		{
+			if (values[i] + values[j] == targetNum)
+			{
+				return { values[i], values[j] };
+			}
+		}
+	}
+
 	return {};
 }

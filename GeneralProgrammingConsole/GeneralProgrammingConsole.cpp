@@ -43,10 +43,34 @@ void PrintTwoNumberSum()
 
     elapsedSeconds = end - start;
 
-    if (numbers.size() > 0)
+    if (numbers2.size() > 0)
     {
         cout << "The two numbers that total the target are: " << endl;
-        for (auto num : numbers)
+        for (auto num : numbers2)
+        {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+    else
+    {
+        cout << "No number combination returns the target sum" << endl;
+    }
+
+    cout << "The elapsed time in seconds is: " << elapsedSeconds.count() << endl;
+
+
+    // Brute force (naive) solution
+    start = chrono::steady_clock::now();
+    auto numbers3 = GetTwoNumbersThatSumToTarget3(inputs, n, 10);
+    end = chrono::steady_clock::now();
+
+    elapsedSeconds = end - start;
+
+    if (numbers3.size() > 0)
+    {
+        cout << "The two numbers that total the target are: " << endl;
+        for (auto num : numbers3)
         {
             cout << num << " ";
         }
