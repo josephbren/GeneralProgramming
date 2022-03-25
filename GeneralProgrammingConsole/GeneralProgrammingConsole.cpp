@@ -5,6 +5,7 @@
 #include <chrono>
 #include "TwoNumberSum.h"
 #include "BubbleSort.h"
+#include "InsertionSort.h"
 
 using namespace std;
 
@@ -95,7 +96,24 @@ void PrintBubbleSort()
 
     BubbleSort(values, n);
 
-    cout << "The sorted array is: ";
+    cout << "The bubble sorted array is: ";
+    for (auto value : values)
+    {
+        cout << value << " ";
+    }
+
+    cout << endl;
+}
+
+
+void PrintInsertionSort()
+{
+    int values[] = { 5, 3, 2, 7, 9, 4, 12 };
+    int n = sizeof(values) / sizeof(values[0]);
+
+    InsertionSort(values, n);
+
+    cout << "The insertion sorted array is: ";
     for (auto value : values)
     {
         cout << value << " ";
@@ -110,4 +128,6 @@ int main()
     PrintTwoNumberSum();
     cout << endl << endl;
     PrintBubbleSort();
+    cout << endl << endl;
+    PrintInsertionSort();
 }

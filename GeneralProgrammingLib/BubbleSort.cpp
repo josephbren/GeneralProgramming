@@ -2,29 +2,32 @@
 #include "pch.h"
 #include "BubbleSort.h"
 
+/*
+	Bubble Sort
+	Time complexity O(n2)
+	Space complexity O(1)
+*/
 
 void BubbleSort(int values[], int n)
 {
-	int j = 0;
+	bool isSorted = false;
+	int counter = 0;
 
-	bool swapHasOccurred = true;
-
-	while (swapHasOccurred)
+	while (!isSorted)
 	{
-		swapHasOccurred = false;
-		for (auto i = 0; i < n - 1 - j; i++)	// The -j is an additional optimization. After every loop iteration the unsorted largest value is pushed to the end
+		isSorted = true;
+		for (auto i = 0; i < n - 1 - counter; i++)	// The -counter is an additional small optimization. After every loop iteration the unsorted largest value is pushed to the end
 		{
-			j = i + 1;
-
 			// Swap i && j
-			if (values[i] > values[j])
+			if (values[i] > values[i + 1])
 			{
 				auto temp = values[i];
-				values[i] = values[j];
-				values[j] = temp;
+				values[i] = values[i + 1];
+				values[i + 1] = temp;
 
-				swapHasOccurred = true;
+				isSorted = false;
 			}
 		}
+		counter++;
 	}
 }
