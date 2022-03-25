@@ -5,8 +5,7 @@
 
 void BubbleSort(int values[], int n)
 {
-	int i = 0;
-	int j = i+1;
+	int j = 0;
 
 	bool swapHasOccurred = true;
 
@@ -15,7 +14,7 @@ void BubbleSort(int values[], int n)
 		swapHasOccurred = false;
 		for (auto i = 0; i < n - 1 - j; i++)	// The -j is an additional optimization. After every loop iteration the unsorted largest value is pushed to the end
 		{
-			int j = i + 1;
+			j = i + 1;
 
 			// Swap i && j
 			if (values[i] > values[j])
