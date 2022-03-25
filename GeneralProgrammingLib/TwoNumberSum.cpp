@@ -95,9 +95,9 @@ vector<int> GetTwoNumbersThatSumToTarget2(int values[], int n, int targetNum)
 */
 vector<int> GetTwoNumbersThatSumToTarget3(int values[], int n, int targetNum)
 {
-	for (auto i = 0; i < n; i++)
+	for (auto i = 0; i < n-1; i++) // i ends before the last array item because j will process it
 	{
-		for (auto j = 0; j < n; j++)
+		for (auto j = 1; j < n; j++) // j starts at 1 because we do not process the same number twice
 		{
 			if (values[i] + values[j] == targetNum)
 			{
