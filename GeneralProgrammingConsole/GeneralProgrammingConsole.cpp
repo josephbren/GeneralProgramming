@@ -2,8 +2,9 @@
 //
 
 #include <iostream>
-#include "TwoNumberSum.h"
 #include <chrono>
+#include "TwoNumberSum.h"
+#include "BubbleSort.h"
 
 using namespace std;
 
@@ -87,7 +88,26 @@ void PrintTwoNumberSum()
 }
 
 
+void PrintBubbleSort()
+{
+    int values[] = { 5, 3, 2, 7, 9, 4, 12 };
+    int n = sizeof(values) / sizeof(values[0]);
+
+    BubbleSort(values, n);
+
+    cout << "The sorted array is: ";
+    for (auto value : values)
+    {
+        cout << value << " ";
+    }
+
+    cout << endl;
+}
+
+
 int main()
 {
     PrintTwoNumberSum();
+    cout << endl << endl;
+    PrintBubbleSort();
 }
