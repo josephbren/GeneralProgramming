@@ -6,6 +6,7 @@
 #include "TwoNumberSum.h"
 #include "BubbleSort.h"
 #include "InsertionSort.h"
+#include "SelectionSort.h"
 
 using namespace std;
 
@@ -123,6 +124,23 @@ void PrintInsertionSort()
 }
 
 
+void PrintSelectionSort()
+{
+    int values[] = { 5, 3, 2, 7, 9, 4, 12 };
+    int n = sizeof(values) / sizeof(values[0]);
+
+    SelectionSort(values, n);
+
+    cout << "The selection sorted array is: ";
+    for (auto value : values)
+    {
+        cout << value << " ";
+    }
+
+    cout << endl;
+}
+
+
 int main()
 {
     PrintTwoNumberSum();
@@ -130,4 +148,6 @@ int main()
     PrintBubbleSort();
     cout << endl << endl;
     PrintInsertionSort();
+    cout << endl << endl;
+    PrintSelectionSort();
 }
