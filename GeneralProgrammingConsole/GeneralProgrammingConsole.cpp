@@ -7,6 +7,7 @@
 #include "BubbleSort.h"
 #include "InsertionSort.h"
 #include "SelectionSort.h"
+#include "CheckPalindrome.h"
 
 using namespace std;
 
@@ -141,6 +142,21 @@ void PrintSelectionSort()
 }
 
 
+void PrintIsPalindrome()
+{
+    string input = "abccba";
+    
+    if (isPalindrome(input))
+    {
+        cout << "The input string " << input << " is a palindrome";
+    }
+    else
+    {
+        cout << "The input string " << input << " is not a palindrome";
+    }
+}
+
+
 int main()
 {
     PrintTwoNumberSum();
@@ -150,4 +166,7 @@ int main()
     PrintInsertionSort();
     cout << endl << endl;
     PrintSelectionSort();
+    cout << endl << endl;
+    PrintIsPalindrome();
+    cout << endl << endl;
 }
