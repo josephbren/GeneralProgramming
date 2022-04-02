@@ -4,8 +4,7 @@
 #include "pch.h"
 #include <unordered_set>
 #include <algorithm>
-#include "framework.h"
-#include "TwoNumberSum.h"
+
 
 /*
 	Optimal solution

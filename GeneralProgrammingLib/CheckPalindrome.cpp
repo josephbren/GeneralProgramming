@@ -1,7 +1,5 @@
 #include "pch.h"
 
-#include "CheckPalindrome.h"
-
 
 /*
 	Worst solution
@@ -29,8 +27,8 @@ bool isPalindrome2(string input)
 */
 bool isPalindrome(string input)
 {
-	int leftIndex = 0;
-	int rightIndex = input.size() - 1;
+	auto leftIndex = 0;
+	auto rightIndex = input.length() - 1;
 
 	while (leftIndex < rightIndex)
 	{

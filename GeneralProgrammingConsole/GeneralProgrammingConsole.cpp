@@ -1,15 +1,9 @@
 // GeneralProgramming.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+#include "pch.h"
 
 #include <iostream>
 #include <chrono>
-#include "TwoNumberSum.h"
-#include "BubbleSort.h"
-#include "InsertionSort.h"
-#include "SelectionSort.h"
-#include "CheckPalindrome.h"
-
-using namespace std;
 
 
 void PrintTwoNumberSum()
@@ -157,6 +151,14 @@ void PrintIsPalindrome()
 }
 
 
+void PrintLongestPalindromicSubstring()
+{
+    string input = "aaaaabklbaaca";
+
+    cout << "The longest palindromic string is " << GetLongestPalindromicSubString(input);
+}
+
+
 int main()
 {
     PrintTwoNumberSum();
@@ -168,5 +170,7 @@ int main()
     PrintSelectionSort();
     cout << endl << endl;
     PrintIsPalindrome();
+    cout << endl << endl;
+    PrintLongestPalindromicSubstring();
     cout << endl << endl;
 }

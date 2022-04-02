@@ -10,6 +10,14 @@
 // add headers that you want to pre-compile here
 #include "framework.h"
 
+#include "TwoNumberSum.h"
+#include "BubbleSort.h"
+#include "InsertionSort.h"
+#include "SelectionSort.h"
+#include "CheckPalindrome.h"
+#include "LongestPalindromicSubString.h"
+
 using namespace std;
 
 #endif //PCH_H
+

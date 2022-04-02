@@ -36,6 +36,9 @@
     <ClInclude Include="CheckPalindrome.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LongestPalindromicSubString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TwoNumberSum.cpp">
@@ -47,13 +50,16 @@
     <ClCompile Include="BubbleSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InsertionSort.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SelectionSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CheckPalindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestPalindromicSubString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
