@@ -39,5 +39,5 @@ string ExpandFromCenter(const string& input, int left, int right)
 		right++;
 	}
 
-	return input.substr(static_cast<std::basic_string<char, std::char_traits<char>, std::allocator<char>>::size_type>(left) + 1, right - left - 1);
+	return input.substr(left + 1, right - left - 1);
 }
