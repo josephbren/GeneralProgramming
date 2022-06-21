@@ -1,4 +1,5 @@
 #include "pch.h"
+#include <algorithm>
 
 
 /*
@@ -27,6 +28,17 @@ bool isPalindrome2(string input)
 */
 bool isPalindrome(string input)
 {
+	// Trim the invalid chars
+	char chars[] = { ",.><[]{}()-_+=!@#$%^&*~`: " };
+	auto size = sizeof(chars) / sizeof(chars[0]);
+
+	std::transform(input.begin(), input.end(), input.begin(), ::tolower);
+
+	for (auto i = 0; i < size; i++)
+	{
+		input.erase(std::remove(input.begin(), input.end(), chars[i]), input.end());
+	}
+
 	auto leftIndex = 0;
 	auto rightIndex = input.length() - 1;
 

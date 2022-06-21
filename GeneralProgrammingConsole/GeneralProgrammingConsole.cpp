@@ -138,7 +138,7 @@ void PrintSelectionSort()
 
 void PrintIsPalindrome()
 {
-    string input = "abccba";
+    string input = "A man, a plan, a canal: Panama";
     
     if (isPalindrome(input))
     {
@@ -159,6 +159,25 @@ void PrintLongestPalindromicSubstring()
 }
 
 
+void PrintMergedSortedLists()
+{
+    Node* list1 = new Node(1);
+    list1->_next = new Node(2);
+    list1->_next->_next = new Node(4);
+
+    Node* list2 = new Node(1);
+    list2->_next = new Node(3);
+    list2->_next->_next = new Node(4);
+
+    Node* mergedList = MergeSortedListsIteratively(list1, list2);
+
+    while (mergedList)
+    {
+        cout << mergedList->_data << " -> ";
+        mergedList = mergedList->_next;
+    }
+}
+
 int main()
 {
     PrintTwoNumberSum();
@@ -172,5 +191,7 @@ int main()
     PrintIsPalindrome();
     cout << endl << endl;
     PrintLongestPalindromicSubstring();
+    cout << endl << endl;
+    PrintMergedSortedLists();
     cout << endl << endl;
 }

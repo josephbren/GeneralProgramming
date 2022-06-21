@@ -156,6 +156,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="LongestPalindromicSubString.h" />
+    <ClInclude Include="MergeTwoSortedLists.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="TwoNumberSum.h" />
@@ -165,6 +166,7 @@
     <ClCompile Include="CheckPalindrome.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="LongestPalindromicSubString.cpp" />
+    <ClCompile Include="MergeTwoSortedLists.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="TwoNumberSum.cpp" />
     <ClCompile Include="pch.cpp">

@@ -16,6 +16,7 @@
 #include "SelectionSort.h"
 #include "CheckPalindrome.h"
 #include "LongestPalindromicSubString.h"
+#include "MergeTwoSortedLists.h"
 
 using namespace std;
 
