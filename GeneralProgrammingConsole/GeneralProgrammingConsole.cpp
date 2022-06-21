@@ -178,6 +178,16 @@ void PrintMergedSortedLists()
     }
 }
 
+
+void PrintStockProfit()
+{
+    int prices[] = { 5, 2, 7, 1, 1 };
+    int size = sizeof(prices) / sizeof(prices[0]);
+
+    cout << "The maximum profit will be: " << GetStockProfit(prices, size);
+}
+
+
 int main()
 {
     PrintTwoNumberSum();
@@ -193,5 +203,7 @@ int main()
     PrintLongestPalindromicSubstring();
     cout << endl << endl;
     PrintMergedSortedLists();
+    cout << endl << endl;
+    PrintStockProfit();
     cout << endl << endl;
 }

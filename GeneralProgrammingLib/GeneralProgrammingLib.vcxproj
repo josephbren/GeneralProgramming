@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BestTimeToBuySellStock.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CheckPalindrome.h" />
     <ClInclude Include="framework.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="TwoNumberSum.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BestTimeToBuySellStock.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="CheckPalindrome.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
