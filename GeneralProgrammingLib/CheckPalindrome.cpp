@@ -28,16 +28,11 @@ bool isPalindrome2(string input)
 */
 bool isPalindrome(string input)
 {
-	// Trim the invalid chars
-	char chars[] = { ",.><[]{}()-_+=!@#$%^&*~`: " };
-	auto size = sizeof(chars) / sizeof(chars[0]);
-
+	// Transform to lower case
 	std::transform(input.begin(), input.end(), input.begin(), ::tolower);
 
-	for (auto i = 0; i < size; i++)
-	{
-		input.erase(std::remove(input.begin(), input.end(), chars[i]), input.end());
-	}
+	// Trim the invalid chars
+	input.erase(std::remove_if(input.begin(), input.end(), [](char c) { return !isalnum(c); }), input.end());
 
 	auto leftIndex = 0;
 	auto rightIndex = input.length() - 1;
